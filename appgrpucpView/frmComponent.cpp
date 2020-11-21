@@ -1,0 +1,2 @@
+#include "frmComponent.h"
+

@@ -123,16 +123,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Antony.cpp" />
+    <ClCompile Include="CalendarForm.cpp" />
+    <ClCompile Include="frmComponent.cpp" />
     <ClCompile Include="frmLayout.cpp" />
-    <ClCompile Include="frmMeetings.cpp" />
+    <ClCompile Include="frmMantTareas.cpp" />
+    <ClCompile Include="frmMantUsuario.cpp" />
+    <ClCompile Include="frmNewWorkshop.cpp" />
+    <ClCompile Include="frmNotifications.cpp" />
+    <ClCompile Include="frmProfile.cpp" />
+    <ClCompile Include="frmRegistro.cpp" />
     <ClCompile Include="frmTalleres.cpp" />
-    <ClCompile Include="frmTasks.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Antony.h" />
+    <ClInclude Include="CalendarForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmComponent.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="frmLayout.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="frmMeetings.h">
+    <ClInclude Include="frmMantTareas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmMantUsuario.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClCompile Include="LoginForm.cpp" />
@@ -141,6 +158,19 @@
     <ClCompile Include="SignForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="frmNewWorkshop.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmNotifications.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmProfile.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frmRegistro.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Header.h" />
     <ClInclude Include="LoginForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -156,22 +186,38 @@
     <ClInclude Include="frmTalleres.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="frmTasks.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CalendarForm.resx">
+      <DependentUpon>CalendarForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmComponent.resx">
+      <DependentUpon>frmComponent.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLayout.resx">
       <DependentUpon>frmLayout.h</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMeetings.resx">
-      <DependentUpon>frmMeetings.h</DependentUpon>
+    <EmbeddedResource Include="frmMantTareas.resx">
+      <DependentUpon>frmMantTareas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantUsuario.resx">
+      <DependentUpon>frmMantUsuario.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewWorkshop.resx">
+      <DependentUpon>frmNewWorkshop.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotifications.resx">
+      <DependentUpon>frmNotifications.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfile.resx">
+      <DependentUpon>frmProfile.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistro.resx">
+      <DependentUpon>frmRegistro.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTalleres.resx">
       <DependentUpon>frmTalleres.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmTasks.resx">
-      <DependentUpon>frmTasks.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.h</DependentUpon>

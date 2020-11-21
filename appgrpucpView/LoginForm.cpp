@@ -1,7 +1,8 @@
 #include "LoginForm.h"
 using namespace System;
 using namespace System::Windows::Forms;
-//agregar el espacio de nombres del Controller:
+/*/agregar el espacio de nombres del Controller:
+*/
 
 [STAThread]
 
@@ -28,4 +29,11 @@ System::Void appgrpucpView::LoginForm::btnLogin_Click(System::Object^ sender, Sy
     
     
     return System::Void();
+}
+
+System::Void appgrpucpView::LoginForm::linkForgottenPassword_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e)
+{
+    RecoveryPasswordForm^ recoverypassword = gcnew RecoveryPasswordForm();
+    recoverypassword->Show();
+
 }

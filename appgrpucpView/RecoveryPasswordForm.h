@@ -59,37 +59,41 @@ namespace appgrpucpView {
 			// 
 			// txtEmail
 			// 
-			this->txtEmail->Location = System::Drawing::Point(266, 28);
+			this->txtEmail->Location = System::Drawing::Point(200, 23);
+			this->txtEmail->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->txtEmail->Name = L"txtEmail";
-			this->txtEmail->Size = System::Drawing::Size(183, 22);
+			this->txtEmail->Size = System::Drawing::Size(138, 20);
 			this->txtEmail->TabIndex = 0;
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(33, 28);
+			this->label1->Location = System::Drawing::Point(25, 23);
+			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(175, 17);
+			this->label1->Size = System::Drawing::Size(136, 13);
 			this->label1->TabIndex = 1;
-			this->label1->Text = L"Escriba Correo de Usuario";
+			this->label1->Text = L"Escriba su correo de Gmail:";
 			// 
 			// btnSend
 			// 
-			this->btnSend->Location = System::Drawing::Point(318, 73);
+			this->btnSend->Location = System::Drawing::Point(238, 59);
+			this->btnSend->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->btnSend->Name = L"btnSend";
-			this->btnSend->Size = System::Drawing::Size(75, 23);
+			this->btnSend->Size = System::Drawing::Size(56, 19);
 			this->btnSend->TabIndex = 2;
 			this->btnSend->Text = L"Enviar";
 			this->btnSend->UseVisualStyleBackColor = true;
 			// 
 			// RecoveryPasswordForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(483, 111);
+			this->ClientSize = System::Drawing::Size(362, 90);
 			this->Controls->Add(this->btnSend);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->txtEmail);
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Name = L"RecoveryPasswordForm";
 			this->Text = L"RecoveryPasswordForm";
 			this->ResumeLayout(false);
