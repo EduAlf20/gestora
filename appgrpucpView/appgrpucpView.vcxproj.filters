@@ -16,6 +16,7 @@
     <ClCompile Include="SignForm.cpp" />
     <ClCompile Include="frmComponent.cpp" />
     <ClCompile Include="frmNewWorkshop.cpp" />
+    <ClCompile Include="frmMantenimientoTaller.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Antony.h" />
@@ -34,5 +35,6 @@
     <ClInclude Include="frmTalleres.h" />
     <ClInclude Include="frmComponent.h" />
     <ClInclude Include="frmNewWorkshop.h" />
+    <ClInclude Include="frmMantenimientoTaller.h" />
   </ItemGroup>
 </Project>

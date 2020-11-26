@@ -3,6 +3,8 @@
 #include "CalendarForm.h"
 #include "ManagerComponentForm.h"
 #include "frmProfile.h"
+#include "frmMantenimientoTaller.h"
+#include "frmTalleres.h"
 /*
 =======
 
@@ -83,3 +85,12 @@ System::Void appgrpucpView::frmLayout::ClickPerfil(System::Object^ sender, Syste
 	ProfileVentana->MdiParent = this;
 	ProfileVentana->Show();
 }
+
+System::Void appgrpucpView::frmLayout::crearTallerToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+{
+	frmMantenimientoTaller^ frm = gcnew frmMantenimientoTaller();
+	frm->MdiParent = this;
+	frm->Show();
+
+}
+

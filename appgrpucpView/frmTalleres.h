@@ -1,5 +1,4 @@
 #pragma once
-#include "frmNewWorkshop.h"
 
 namespace appgrpucpView {
 
@@ -63,7 +62,7 @@ namespace appgrpucpView {
 		/// <summary>
 		/// Variable del diseñador necesaria.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -162,7 +161,6 @@ namespace appgrpucpView {
 			this->btn_New_taller->TabIndex = 6;
 			this->btn_New_taller->Text = L"Crear taller";
 			this->btn_New_taller->UseVisualStyleBackColor = true;
-			this->btn_New_taller->Click += gcnew System::EventHandler(this, &frmTalleres::btn_New_taller_Click);
 			// 
 			// frmTalleres
 			// 
@@ -181,25 +179,7 @@ namespace appgrpucpView {
 
 		}
 #pragma endregion
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	}
 
-		   public: static List<workshop^>^ lista_talleres = gcnew List<workshop^>();
-
-private: System::Void btn_New_taller_Click(System::Object^ sender, System::EventArgs^ e) {
-	frmNewWorkshop^ frm = gcnew frmNewWorkshop(this);
-	frm->ShowDialog();
-	lista_talleres->Add(frm->taller);
-	update_dgv();
+	};
 }
-	   public: void update_dgv(void) {
-		   dataGridView4->Rows->Clear();
-		   for (int i = 0; i < lista_talleres->Count; i++) {
-			   dataGridView4->Rows->Add();
-			   dataGridView4->Rows[i]->Cells[0]->Value = lista_talleres[i]->tittle;
-			   dataGridView4->Rows[i]->Cells[2]->Value = lista_talleres[i]->descripcion;
-		   }
 
-	   }
-};
-}

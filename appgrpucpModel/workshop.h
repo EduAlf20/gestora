@@ -1,5 +1,6 @@
 #pragma once
 #include "user.h"
+#include "Session.h"
 namespace appgrpucpModel 
 {
 	using namespace System;
@@ -15,6 +16,7 @@ namespace appgrpucpModel
 		String^ descripcion;
 		int capacity;
 		List<user^>^ listaParticipantes;
+		List<Session^>^ listSession;
 		
 	public:
 
